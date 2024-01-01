@@ -39,17 +39,17 @@
     bottom: 20px
     left: -200px
     max-width: 200px
-    z-index: 1   
-    animation: CarOneAnimation 15s linear infinite
+    z-index: 5   
+    animation: CarOneAnimation 9s linear infinite
 
 .car2
     position: absolute
     bottom: 50px
     right: -200px
     max-width: 200px
-    z-index: 1    
-    transform: rotateY(180deg)
-    animation: CarTwoAnimation 20s linear infinite
+    z-index: 4
+    animation: CarTwoAnimation 6s linear infinite
+    
 
 //keyframes
 
@@ -73,5 +73,5 @@
     0%
         transform: translateX(0px) rotateY(180deg)
     90%,100%
-        transform: translateX(calc(-100vw - 2000px))
+        transform: translateX(calc(-100vw - 2000px)) rotateY(180deg)
                
