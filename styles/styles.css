@@ -10,6 +10,14 @@
   overflow: hidden;
   background: linear-gradient(#a6d8ff, #fff);
 }
+.scene.night {
+  background: linear-gradient(#203a4e, #6a768f);
+}
+.scene.night .sun {
+  left: 15%;
+  top: 100px;
+  box-shadow: 0 0 0 #fff;
+}
 
 .sun {
   position: absolute;
