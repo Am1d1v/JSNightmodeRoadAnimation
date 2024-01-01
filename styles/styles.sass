@@ -32,3 +32,46 @@
     background: url(../images/bg.png)
     background-size: 1500px
     background-repeat: repeat-x
+    animation: animatedBG 30s linear infinite
+
+.car1
+    position: absolute
+    bottom: 20px
+    left: -200px
+    max-width: 200px
+    z-index: 1   
+    animation: CarOneAnimation 15s linear infinite
+
+.car2
+    position: absolute
+    bottom: 50px
+    right: -200px
+    max-width: 200px
+    z-index: 1    
+    transform: rotateY(180deg)
+    animation: CarTwoAnimation 20s linear infinite
+
+//keyframes
+
+// Background Animation    
+@keyframes animatedBG
+    0%
+        background-position-x: 0%
+    100%
+        background-position-x: -1500px
+                
+// Cars Animation
+// Car1 Animation
+@keyframes CarOneAnimation
+    0%
+        transform: translateX(0px)
+    90%,100%
+        transform: translateX(calc(100vw + 2000px))
+        
+// Car2        
+@keyframes CarTwoAnimation
+    0%
+        transform: translateX(0px) rotateY(180deg)
+    90%,100%
+        transform: translateX(calc(-100vw - 2000px))
+               
